@@ -1,0 +1,168 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: url(https://images.unsplash.com/photo-1688433416701-13d3e04bb7fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f7f7f7;
+}
+
+header {
+    background: url(https://images.unsplash.com/photo-1689351060804-fca36e095da4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80);
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+nav .logo {
+    font-size: rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.menu-toggle {
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-left: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    ul {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    li {
+        margin: 1rem 0;
+    }
+
+    ul.active {
+        display: flex;
+    }
+}
+
+
+
+h1 {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.logo {
+    color: aliceblue;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+    background-image: url(//images.unsplash.com/photo-1558591710-4b4a1ae0f04d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+
+h1,
+h2 {
+    color: #333;
+}
+
+/* Home Section Styles */
+#home {
+    text-align: center;
+}
+
+/* Generator and Validator Section Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#certificatePreview img {
+    max-width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#validationResult p {
+    font-weight: bold;
+}
+
+/* About Section Styles */
+#about {
+    text-align: center;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SealSecure</title>
+    <script src="static/js/script.js"></script>
+    
+    <link rel="stylesheet" href="{% static 'styles/style.css'%}"/>
+</head>
+<body>    
+    <header>
+        <nav>
+            <h1 class="logo">SealSecure</h1>
+            <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+            <ul id="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#generator">Generator</a></li>
+                <li><a href="#validator">Validator</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Welcome to the Certificate Generator and Validator</h1>
+            <p>Generate and validate certificates with ease using our advanced AI-powered system.</p>
+        </section>
+    
+        <section id="generator">
+            <h2>Generate Certificate</h2>
+            <form id="certificateForm">
+                <label for="name">Recipient Name:</label>
+                <input type="text" id="name" required>
+                <label for="course">Course Name:</label>
+                <input type="text" id="course" required>
+                <label for="date">Completion Date:</label>
+                <input type="date" id="date" required>
+                <button type="submit">Generate Certificate</button>
+            </form>
+            <div id="certificatePreview">
+                <!-- Certificate preview will be displayed here -->
+            </div>
+        </section>
+    
+        <section id="validator">
+            <h2>Validate Certificate</h2>
+            <form id="validationForm">
+                <label for="certificateCode">Certificate Code:</label>
+                <input type="text" id="certificateCode" required>
+                <button type="submit">Validate Certificate</button>
+            </form>
+            <div id="validationResult">
+                <!-- Validation result will be displayed here -->
+            </div>
+        </section>
+    
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are a team of highly skilled developers and AI experts committed to providing innovative solutions in
+                certificate generation and validation. Our advanced AI algorithms ensure the highest level of accuracy
+                and
+                security for your certificates.</p>
+        </section>
+    </main>
+    
+   
+
+
+    {% comment %} <h1>this is a page</h1>
+    <button type="submit">sign_up</button>
+    <button type="submit">sign_in</button>
+    <button type="submit">sign_out</button>
+    <script src="" async defer></script> {% endcomment %}
+</body>
+</html>
